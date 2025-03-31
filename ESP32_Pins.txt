@@ -30,4 +30,6 @@ COLUMN_PINS = [42, 41, 40, 39]
 #Sabotage
 Sabotage = (35, Pin.IN)
 
+#GPIO34-39 can only be set as input mode and do not have software-enabled pullup or pulldown functions!!!
+
 """
