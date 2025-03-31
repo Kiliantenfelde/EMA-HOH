@@ -1,0 +1,42 @@
+Ich habe folgende Pin Konfiguration:
+#Magnetkontakte
+Magnetkontakt_1 = Pin(4, Pin.IN)
+Magnetkontakt_2 = Pin(5, Pin.IN)
+Magnetkontakt_3 = Pin(6, Pin.IN)
+Magnetkontakt_4 = Pin(7, Pin.IN)
+
+#Tuerkontakte
+Tuerkontakt_1 = Pin(15, Pin.IN)
+Tuerkontakt_2 = Pin(16, Pin.IN)
+Tuerkontakt_3 = Pin(17, Pin.IN)
+Tuerkontakt_4 = Pin(18, Pin.IN)
+
+#Bewegungsmelder
+BWM_1 = Pin(3, Pin.IN)
+BWM_2 = Pin(46, Pin.IN)
+BWM_3 = Pin(10, Pin.IN)
+
+#Sirene
+Sirene = Pin(36, Pin.OUT)
+
+#LCD_Display
+LCD_SDA = Pin(8, Pin.OUT)
+LCD_SCL = Pin(9, Pin.OUT)
+
+#Numpad
+ROW_PINS = [43, 44, 1, 2]
+COLUMN_PINS = [42, 41, 40, 39]
+
+#Sabotage
+Sabotage = (35, Pin.IN)
+
+Ich möchte folgende Funktionen in Micropython mit einem ESP32 WOMP3 realisieren:
+- Im Unscharf geschalteten Zustand soll keinerlei Überwachung stattfinden
+- Über das Numpad soll über eine Codeeingabe(1234) die Anlage scharfgeschaltet werden können,
+  wenn alle Magnetkontakte und alle Tuerkontakte geschlossen stattfinden.
+- Sollte einer der Magnet- oder Tuerkontakte nicht geschlossen sein, soll beim Versuch des Scharfschaltens auf dem
+  LCD_Display der Kontakt angezeigt, werden, der nicht geschlossen ist.
+- Es gibt einen Sabotagekontakt, der geschlossen sein muss, um die Anlgae scharfstellen zu können. Ist er
+  nicht geschlossen, soll dies auf dem LCD_Display angezeigt werden.
+
+- Wenn die Anlage scharfgestellt ist, soll 
