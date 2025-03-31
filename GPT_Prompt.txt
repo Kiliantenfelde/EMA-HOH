@@ -39,4 +39,9 @@ Ich möchte folgende Funktionen in Micropython mit einem ESP32 WOMP3 realisieren
 - Es gibt einen Sabotagekontakt, der geschlossen sein muss, um die Anlgae scharfstellen zu können. Ist er
   nicht geschlossen, soll dies auf dem LCD_Display angezeigt werden.
 
-- Wenn die Anlage scharfgestellt ist, soll 
+- Wenn die Anlage scharfgestellt ist, sollen die Bewegungsmelder aktiv sein, d.h. sobald einer der Konatkte der Bewegungsmelder
+  geschlossen ist, soll die Sirene angeschaltet werden
+- Die Anlage soll mit dem Code(1234) wieder unscharf gestellt werden können.
+- Wurde ein Alarm ausgelöst, muss der Code(5678) eingegeben werden, damit die Anlage wieder unscharf geschaltet wird.
+
+Schreibe mir ein strukturiertes Micropython-Programm, das alle diese Funktionen unterbringt.
