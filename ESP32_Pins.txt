@@ -1,34 +1,34 @@
 """
 #Magnetkontakte
-Magnetkontakt_1 = Pin(4, Pin.IN)
-Magnetkontakt_2 = Pin(5, Pin.IN)
-Magnetkontakt_3 = Pin(6, Pin.IN)
-Magnetkontakt_4 = Pin(7, Pin.IN)
+Magnetkontakt_1 = Pin(4, Pin.IN) !
+Magnetkontakt_2 = Pin(5, Pin.IN) !
+Magnetkontakt_3 = Pin(6, Pin.IN) !
+Magnetkontakt_4 = Pin(7, Pin.IN) !
 
 #Tuerkontakte
-Tuerkontakt_1 = Pin(15, Pin.IN)
-Tuerkontakt_2 = Pin(16, Pin.IN)
-Tuerkontakt_3 = Pin(17, Pin.IN)
-Tuerkontakt_4 = Pin(18, Pin.IN)
+Tuerkontakt_1 = Pin(15, Pin.IN) !
+Tuerkontakt_2 = Pin(16, Pin.IN) !
+Tuerkontakt_3 = Pin(17, Pin.IN) !
+Tuerkontakt_4 = Pin(18, Pin.IN) !
 
 #Bewegungsmelder
-BWM_1 = Pin(3, Pin.IN)
-BWM_2 = Pin(46, Pin.IN)
-BWM_3 = Pin(10, Pin.IN)
+BWM_1 = Pin(3, Pin.IN) !
+BWM_2 = Pin(46, Pin.IN) !
+BWM_3 = Pin(10, Pin.IN) !
 
 #Sirene
-Sirene = Pin(36, Pin.OUT)
+Sirene = Pin(47, Pin.OUT) !
 
 #LCD_Display
-LCD_SDA = Pin(8, Pin.OUT)
-LCD_SCL = Pin(9, Pin.OUT)
+LCD_SDA = Pin(8, Pin.OUT) !
+LCD_SCL = Pin(9, Pin.OUT) !
 
 #Numpad
-ROW_PINS = [43, 44, 1, 2]
-COLUMN_PINS = [42, 41, 40, 39]
+ROW_PINS = [40,39,38,48] !
+COLUMN_PINS = [1,2,42,41] !
 
 #Sabotage
-Sabotage = (35, Pin.IN)
+Sabotage = (21, Pin.IN) !
 
 #GPIO34-39 can only be set as input mode and do not have software-enabled pullup or pulldown functions!!!
 
