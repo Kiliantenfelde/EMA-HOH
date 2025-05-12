@@ -7,6 +7,7 @@ from lib_lcd1602_2004_with_i2c import LCD
 Magnetkontakte = [Pin(i, Pin.IN) for i in [4, 5, 6, 7]]
 Tuerkontakte = [Pin(i, Pin.IN) for i in [15, 16, 17, 18]]
 Bewegungsmelder = [Pin(i, Pin.IN) for i in [3, 46, 10]]
+
 Sabotage = Pin(21, Pin.IN)
 Sirene = Pin(47, Pin.OUT)
 scl_pin = 9
